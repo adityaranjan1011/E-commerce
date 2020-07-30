@@ -24,14 +24,14 @@ export default function CountDownTimer() {
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
   // const [year] = useState(new Date().getFullYear(););  
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setTimeLeft(calculateTimeLeft());
-      }, 1000);
+    // useEffect(() => {
+    //   const timer = setTimeout(() => {
+    //     setTimeLeft(calculateTimeLeft());
+    //   }, 1000);
 
       // return () => clearTimeout(timer);
 
-    });
+    // });
 
     const timerComponents = [];
 
