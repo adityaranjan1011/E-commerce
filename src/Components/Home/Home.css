@@ -1,0 +1,71 @@
+/*
+ * Home css File
+*/
+
+.Home {        
+        background-image: url('../../assets/header.jpg');
+        min-height: 100vh; 
+        color: white;
+}
+header{
+    background-color: #ff5722;
+    height: 60px !important;
+    position: sticky;
+    z-index: 5;
+    top: 0px; 
+    text-align: left;
+    padding: 0px 30px 0px 30px;
+    display: grid !important;
+    grid-template-columns: repeat(2,1fr) !important;
+    /* color: #ffff; */
+    
+}
+.logo{
+    /* padding: 10px; */
+}
+.text {
+    font-weight: 400;
+    color: #ffffff;
+    position: relative;
+    font-size: 1.5em;
+    font-family: initial;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+p{
+  font-family: initial;
+  color:#ffffff;
+
+}
+.contactDetails{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+    font-family: initial;
+    /* padding: 10px; */
+    line-height: 4;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ffffff;
+    
+}
+
+.countdown{
+    padding: 40px;
+}
+footer{
+    /* position: relative !important;
+    top: 50px; */
+    padding: 20px;
+    display: flex;
+    text-align: center; 
+    height: 100px;
+    /* background-color: #ff5722; */
+}
+
+.footer-text{
+    padding-right: 10px;
+}
+.imageIcon{
+    padding-right: 10px;
+}

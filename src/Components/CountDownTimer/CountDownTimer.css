@@ -1,0 +1,20 @@
+/*
+ * CountDownTimer css File
+*/
+
+.CountDownTimer {   
+    padding: 20px;
+}
+h1{
+    font-size: 3em;
+    font-family: initial;
+    font-weight: 500;
+}
+.days-timer{
+    font-size: 2.5em;
+    font-family: initial;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
