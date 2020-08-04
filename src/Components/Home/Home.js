@@ -37,7 +37,7 @@ class Home extends Component {
             <span onClick={this.showContact}>{this.state.company_contact}</span>
           </div>
         </header>
-        <div className="countdown">
+        <div className="countdown" >
           <div className="neo-poster">
           <ImageCarousel/>
           </div>
@@ -53,19 +53,22 @@ class Home extends Component {
             <span className="footer-text">
               <a href="https://www.instagram.com/neowiseindia/?hl=en">
                 <img src={InstagramIcon} className="imageIcon" alt=""/>
-              </a> @NEOWISE
+                @NEOWISE
+              </a> 
             </span>
 
             <span className="footer-text">
               <a href="https://www.facebook.com/neowiseindia/">
                 <img src={FacebookIcon} className="imageIcon" alt=""/>
-              </a> @NEOWISE
+              </a> 
+              @NEOWISE
             </span>
 
              <span className="footer-text">
-              <a href="https://www.instagram.com/neowiseindia/?hl=en">
+              <a href="https://twitter.com/neowiseindia">
                 <img src={Twitter} className="imageIcon" alt=""/>
-              </a> @NEOWISE
+                @NEOWISE
+              </a> 
             </span>
             
             
