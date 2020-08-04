@@ -14,24 +14,12 @@ class Home extends Component {
     this.state = {
       company_name: "NEOWISE",
       company_quote: "Spark of Your Closet",
-      company_contact: "CONTACT",
+      company_contact: "HELP & CONTACT",
       open: false,
     };
   }
-
-  // componentWillMount(){}
-  // componentDidMount(){}
-  // componentWillUnmount(){}
-
-  // componentWillReceiveProps(){}
-  // shouldComponentUpdate(){}
-  // componentWillUpdate(){}
-  // componentDidUpdate(){}
-
   showContact = () => {
-    this.setState({
-      open: true,
-    });
+    console.log("help and contact");
   };
 
   render() {
@@ -42,7 +30,7 @@ class Home extends Component {
             <span className="text">{this.state.company_name}</span>
             <p>{this.state.company_quote} </p>
           </div>
-          {/* <div>Coming Soon.....</div> */}
+         
           <div className="contactDetails">
             <span >HOME</span>
             <span >CATEGORY</span>
@@ -55,7 +43,7 @@ class Home extends Component {
           </div>
           <CountDownTimer />
         </div>
-        {this.state.open ? (
+        {/* {this.state.open ? ( */}
           <footer>
             {/* <span className="footer-text">
               <a href="mailto:adityamnnit2016@gmailcom?subject=Check%20this%20out!&body=%3Cp%3EHi%3C%2Fp%3E%3Cimg%20src%3D%22data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4%2F%2F8%2Fw38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg%3D%3D%22%20alt%3D%22Red%20dot%22%20%2F%3E">
@@ -82,7 +70,7 @@ class Home extends Component {
             
             
           </footer>
-        ) : null}
+        {/* ) : null} */}
       </div>
     );
   }

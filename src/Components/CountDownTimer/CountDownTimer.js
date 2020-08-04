@@ -1,13 +1,12 @@
 import React, {  useEffect, useState  } from 'react';
 import './CountDownTimer.css';
 
-
 export default function CountDownTimer() {
 
   const calculateTimeLeft = () =>{
     let year = new Date().getFullYear();
   
-    const diff = +new Date(`${year}-10-30`) - +new Date();
+    const diff = +new Date(`${year}-11-5`) - +new Date();
   
     let timeLeft = {};
   
@@ -24,14 +23,14 @@ export default function CountDownTimer() {
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
   // const [year] = useState(new Date().getFullYear(););  
-    // useEffect(() => {
-    //   const timer = setTimeout(() => {
-    //     setTimeLeft(calculateTimeLeft());
-    //   }, 1000);
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setTimeLeft(calculateTimeLeft());
+      }, 1000);
 
-      // return () => clearTimeout(timer);
+      return () => clearTimeout(timer);
 
-    // });
+    });
 
     const timerComponents = [];
 
@@ -58,4 +57,3 @@ export default function CountDownTimer() {
   
 }
 
-// export default CountDownTimer;
