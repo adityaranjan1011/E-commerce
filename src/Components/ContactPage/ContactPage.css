@@ -1,0 +1,19 @@
+/*
+ * ContactPage css File
+*/
+
+.contactPage {
+    /* propertys here */
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    /* font-size: 1.3em; */
+}
+.contact{
+font-size: 1.3em;
+color: #ffffff;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+

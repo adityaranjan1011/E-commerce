@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import "./Home.css";
+import { Link } from "react-scroll";
 import CountDownTimer from "../CountDownTimer/CountDownTimer";
 import InstagramIcon from "../../icons/insta.svg";
 import FacebookIcon from "../../icons/fb.svg";
-// import EmailIcon from "../../icons/email.svg";
+
 import Twitter from "../../icons/twitter.svg";
 import ImageCarousel from "../ImageCarousel/ImageCarousel";
-
+import AboutPage from "../AboutPage/AboutPage";
+import ContactPage from "../ContactPage/ContactPage";
+// import Flag from "../../assets/inflag.jpg";
 
 class Home extends Component {
   constructor(props) {
@@ -15,65 +18,114 @@ class Home extends Component {
       company_name: "NEOWISE",
       company_quote: "Spark of Your Closet",
       company_contact: "HELP & CONTACT",
-      open: false,
+      company_info: "ABOUT",
+      company_home: "HOME"
+      // open: false,
     };
   }
-  showContact = () => {
-    console.log("help and contact");
-  };
 
   render() {
     return (
-      <div className="Home">
+      <div className="Home" id="home">
         <header>
           <div className="logo">
-            <span className="text">{this.state.company_name}</span>
+            <span className="text">
+            <Link
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+              {this.state.company_name}
+              </Link></span>
             <p>{this.state.company_quote} </p>
+            {/* <img src={Flag} alt="" height="40px" width="60px"></img> */}
           </div>
-         
+
           <div className="contactDetails">
-            <span >HOME</span>
-            <span >CATEGORY</span>
-            <span onClick={this.showContact}>{this.state.company_contact}</span>
+            <span>
+            <Link
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                {this.state.company_home}
+              </Link>
+
+            </span>
+            <span>
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                {this.state.company_info}
+              </Link>
+            </span>
+            <span> <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+              {this.state.company_contact}
+              </Link>
+              </span>
           </div>
         </header>
-        <div className="countdown" >
+        <div className="countdown">
           <div className="neo-poster">
-          <ImageCarousel/>
+            <ImageCarousel />
           </div>
           <CountDownTimer />
         </div>
-        {/* {this.state.open ? ( */}
-          <footer>
-            {/* <span className="footer-text">
-              <a href="mailto:adityamnnit2016@gmailcom?subject=Check%20this%20out!&body=%3Cp%3EHi%3C%2Fp%3E%3Cimg%20src%3D%22data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4%2F%2F8%2Fw38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg%3D%3D%22%20alt%3D%22Red%20dot%22%20%2F%3E">
-                <img src={EmailIcon} className="imageIcon" alt=""/>
-              </a>
-            </span> */}
-            <span className="footer-text">
-              <a href="https://www.instagram.com/neowiseindia/?hl=en">
-                <img src={InstagramIcon} className="imageIcon" alt=""/>
-                @NEOWISE
-              </a> 
-            </span>
 
-            <span className="footer-text">
-              <a href="https://www.facebook.com/neowiseindia/">
-                <img src={FacebookIcon} className="imageIcon" alt=""/>
-              </a> 
-              @NEOWISE
-            </span>
+        {/* {this.state.open ? (
+          <div className="intro-details">
+            {/* <span>About</span> }
+            <AboutPage />
+          </div>
+        ) : null} */}
 
-             <span className="footer-text">
-              <a href="https://twitter.com/neowiseindia">
-                <img src={Twitter} className="imageIcon" alt=""/>
-                @NEOWISE
-              </a> 
-            </span>
-            
-            
-          </footer>
-        {/* ) : null} */}
+        <AboutPage />
+        <footer id="contact">
+          <div className="contactInfo">
+           <ContactPage />
+          </div>
+         <div className="follow-us">
+           <p className="follow-text">Follow us</p>
+          <span className="footer-text">
+            <a href="https://www.instagram.com/neowiseindia/?hl=en">
+              <img src={InstagramIcon} className="imageIcon" alt="" />
+             instagram
+            </a>
+          </span>
+
+          <span className="footer-text">
+            <a href="https://www.facebook.com/neowiseindia/">
+              <img src={FacebookIcon} className="imageIcon" alt="" />
+            </a>
+            facebook
+          </span>
+
+          <span className="footer-text">
+            <a href="https://twitter.com/neowiseindia">
+              <img src={Twitter} className="imageIcon" alt="" />
+              twitter
+            </a>
+          </span>
+          </div>
+        </footer>
       </div>
     );
   }

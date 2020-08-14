@@ -6,6 +6,7 @@
 }
 header{
     background-color: #ff5722;
+    /* box-shadow: inset 0px 40px 0px orange, inset 0px 50px 0px white, inset 0px 90px 0px green; */
     height: 60px !important;
     position: sticky;
     z-index: 5;
@@ -49,14 +50,25 @@ p{
     padding: 40px;
 }
 footer{
-    
+    background-color: #ff5722;
     padding: 20px;
-    display: flex;
+    display: grid !important;
+    grid-template-columns: repeat(2,1fr);
     text-align: center; 
-    height: 100px;
+    height: 35vh;
    
 }
-
+.contactInfo{
+    padding: 20px;
+}
+.follow-us{
+    padding:20px;
+}
+.follow-text{
+    color: #ffffff;
+    font-size: 1.3em;
+   
+}
 .footer-text{
     padding-right: 10px;
 }
@@ -67,3 +79,4 @@ a{
     text-decoration: none;
     color: #ffffff !important;
 }
+

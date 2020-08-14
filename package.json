@@ -10,7 +10,8 @@
     "react": "^16.13.1",
     "react-canvas-js": "^1.0.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-scroll": "^1.8.1"
   },
   "scripts": {
     "predeploy": "npm run build",

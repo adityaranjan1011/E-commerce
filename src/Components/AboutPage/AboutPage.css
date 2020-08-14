@@ -1,0 +1,64 @@
+/*
+ * AboutPage css File
+*/
+
+.AboutPage {
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* propertys here */
+}
+.aboutImage {
+    padding: 20px;
+    align-items: center;
+    margin: 20px;
+}
+.imageCarousel {
+    width: 400px !important;
+    left: 30px;
+    top: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}
+.madhubaniImage {
+    height: 450px;
+    width: 400px;
+}
+.aboutToText {
+    padding: 25px;
+    font-size: 1.8em;
+    font-family: initial;
+    margin: 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+p {
+    color: #000000;
+}
+.para_text {
+    text-decoration: underline;
+    color: #ff5722;
+}
+
+@media screen and (max-width: 1008px) and (min-width: 908px) {
+    .aboutToText {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 907px) and (min-width: 769px) {
+    .AboutPage {
+        grid-template-columns: none;
+    }
+    .imageCarousel {
+        left:75px;
+        }
+    .madhubaniImage{
+        height: 300px;
+        width: 400px;
+    }
+    .aboutToText {
+        font-size: 1.3em;
+    }
+}

@@ -2,8 +2,8 @@ import React from "react";
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBContainer } from
 "mdbreact";
 import NeoBrand from "../../assets/neo1.jpeg";
-import NeoImage from "../../assets/img1.jpg";
-import NeoImages from "../../assets/neo2.jpeg";
+import IndiaImage from "../../assets/indianflag.jpg";
+import NeoImage from "../../assets/neo2.jpeg";
 
 const ImageCarousel = () => {
   return (
@@ -21,7 +21,7 @@ const ImageCarousel = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src={NeoImage}
+                src={IndiaImage}
                 alt="First slide"
                 height=" 400px" width=" 960px"
               />
@@ -31,7 +31,7 @@ const ImageCarousel = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src={NeoImages}
+                src={NeoImage}
                 alt="Second slide"  
                 height=" 400px" width="960px "
               />
