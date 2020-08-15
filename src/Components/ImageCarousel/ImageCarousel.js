@@ -23,7 +23,8 @@ const ImageCarousel = () => {
                 className="d-block w-100 neoImage"
                 src={IndiaImage}
                 alt="First slide"
-                // height="400px" width="960px"
+                height="400px" width="960px" 
+                // min-height="250px" min-width="300px"
               />
             </MDBView>
           </MDBCarouselItem>
@@ -33,17 +34,19 @@ const ImageCarousel = () => {
                 className="d-block w-100 neoImage"
                 src={NeoImage}
                 alt="Second slide"  
-                // height="400px" width="960px"
+                height="400px" width="960px"
+                //  min-height="250px" min-width="300px"
               />
             </MDBView>
           </MDBCarouselItem>
           <MDBCarouselItem itemId="3">
             <MDBView>
               <img
-                className="d-block w-100  neoImage"
+                className="d-block w-100 neoImage"
                 src={NeoBrand}
                 alt="Third slide"
-                // height=" 400px" width="960px"
+                height=" 400px" width="960px" 
+                // min-height="250px" min-width="300px"
               />
             </MDBView>
           </MDBCarouselItem>
