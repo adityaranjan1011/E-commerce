@@ -41,8 +41,10 @@ p {
     color: #ff5722;
 }
 
-@media screen and (max-width: 1008px) and (min-width: 908px) {
-
+@media screen and (max-width: 1024px) and (min-width: 908px) {
+.AboutPage{
+    height: auto;
+}
     .aboutToText {
         font-size: 1.5em;
     }
@@ -50,11 +52,14 @@ p {
 
 @media screen and (max-width: 907px) and (min-width: 769px) {
     .AboutPage {
-        height: calc(100vh - 440px);
+        height: auto;
         grid-template-columns: none;
     }
-    .imageCarousel {
+    /* .imageCarousel {
         left:75px;
+        } */
+        .aboutImage{
+            text-align: -webkit-center;
         }
     .madhubaniImage{
         height: 300px;
@@ -67,7 +72,7 @@ p {
 
 @media screen and (max-width:768px) and (min-width:560px){
     .AboutPage {
-        height: calc(100vh - 30px);
+        height: auto;
         grid-template-columns: none;
     }
     .aboutImage{

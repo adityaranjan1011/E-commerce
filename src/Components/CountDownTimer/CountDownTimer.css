@@ -18,3 +18,15 @@ a{
     text-decoration: none;
     color: #ffffff;
 }
+
+@media screen and (max-width: 907px) and (min-width: 769px) {
+    .days-timer{
+        font-size: 1.5em ;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 560px) {
+    .days-timer{
+        font-size: 1.5em ;
+    }
+}

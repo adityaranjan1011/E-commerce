@@ -1,27 +1,25 @@
-
-.Home {        
-        background-image: url('../../assets/header.jpg');
-        min-height: 100vh; 
-        color: white;
+.Home {
+    background-image: url("../../assets/header.jpg");
+    min-height: 100vh;
+    color: white;
 }
-header{
+header {
     background-color: #ff5722;
     /* box-shadow: inset 0px 40px 0px orange, inset 0px 50px 0px white, inset 0px 90px 0px green; */
     height: 60px !important;
     position: sticky;
     z-index: 5;
-    top: 0px; 
+    top: 0px;
     text-align: left;
     padding: 0px 30px 0px 30px;
     display: grid !important;
-    grid-template-columns: repeat(2,1fr) !important;
+    grid-template-columns: repeat(2, 1fr) !important;
     /* color: #ffff; */
-    
 }
-.logo{
+.logo {
     display: flex;
 }
-.inflag{
+.inflag {
     margin-top: 8px;
     margin-left: 10px;
 }
@@ -34,12 +32,11 @@ header{
     text-decoration: underline;
     text-underline-position: under;
 }
-p{
-  font-family: initial;
-  color:#ffffff;
-
+p {
+    font-family: initial;
+    color: #ffffff;
 }
-.contactDetails{
+.contactDetails {
     display: flex;
     justify-content: space-around;
     font-weight: 500;
@@ -49,40 +46,54 @@ p{
     font-size: 16px;
     cursor: pointer;
     color: #ffffff;
-    
 }
 
-.countdown{
+.countdown {
     padding: 40px;
 }
-footer{
+footer {
     background-color: #ff5722;
     padding: 20px;
     display: grid !important;
-    grid-template-columns: repeat(2,1fr);
-    text-align: center; 
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
     height: 35vh;
-   
 }
-.contactInfo{
+.contactInfo {
     padding: 20px;
 }
-.follow-us{
-    padding:20px;
+.follow-us {
+    padding: 20px;
 }
-.follow-text{
+.follow-text {
     color: #ffffff;
     font-size: 1.3em;
-   
 }
-.footer-text{
+.footer-text {
     padding-right: 10px;
 }
-.imageIcon{
+.imageIcon {
     padding-right: 10px;
 }
-a{
+a {
     text-decoration: none;
     color: #ffffff !important;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 908px) {
+    footer {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 907px) and (min-width: 769px) {
+    footer {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 560px) {
+    footer {
+        height: auto;
+    }
+}
