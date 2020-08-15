@@ -97,3 +97,21 @@ a {
         height: auto;
     }
 }
+
+@media screen and (max-width: 559px) and (min-width: 350px) {
+    header {
+        height: 150px !important;
+        grid-template-columns: none !important;
+    }
+
+    .logo {
+        justify-content: space-between;
+    }
+  footer{
+      height: auto;
+      grid-template-columns: none;
+  } 
+  .footer-text{
+      padding: none;
+  }
+} 

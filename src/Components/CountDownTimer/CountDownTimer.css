@@ -30,3 +30,15 @@ a{
         font-size: 1.5em ;
     }
 }
+
+@media screen and (max-width: 559px) and (min-width: 350px) {
+  .CountDownTimer{
+      padding: 10px;
+  }
+  h1{
+      font-size: 2em;
+  }
+  .days-timer{
+      font-size: 0.8em;
+  }
+}

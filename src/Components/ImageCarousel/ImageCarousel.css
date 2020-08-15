@@ -2,6 +2,13 @@
  * ImageCarousel css File
 */
 
-.ImageCarousel {
-    /* propertys here */
+/* .ImageCarousel {
+    /* propertys here 
+} */
+
+@media screen and (max-width: 559px) and (min-width: 350px) {
+    .d-block w-100 {
+        height: 250px !important;
+        width: 250px !important;
+    }
 }

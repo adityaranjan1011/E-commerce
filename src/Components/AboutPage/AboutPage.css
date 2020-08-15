@@ -12,7 +12,7 @@
 }
 .aboutImage {
     padding: 20px;
-    align-items: center;
+    /* align-items: center; */
     margin: 20px;
 }
 .imageCarousel {
@@ -88,5 +88,27 @@ p {
     }
     .aboutToText {
         font-size: 1em;
+    }
+}
+
+@media screen and (max-width:559px) and (min-width:350px)
+{
+    .AboutPage{
+        height: auto;
+        grid-template-columns:none;
+    }
+    .aboutToText{
+        font-size: 1em;
+    }
+    .aboutImage{
+        margin: 0px auto;
+    }
+    .imageCarousel{
+        width: 300px !important;
+        left: auto;
+    }
+    .madhubaniImage {
+        height: 250px;
+        width:300px;
     }
 }
