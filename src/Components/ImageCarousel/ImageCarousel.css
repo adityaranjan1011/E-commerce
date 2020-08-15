@@ -5,9 +5,12 @@
 /* .ImageCarousel {
     /* propertys here 
 } */
-
+.neoImage{
+    height: 400px;
+    width: 960px;
+}
 @media screen and (max-width: 559px) and (min-width: 350px) {
-    .d-block w-100 {
+    .neoImage {
         height: 250px !important;
         width: 250px !important;
     }

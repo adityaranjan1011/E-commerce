@@ -19,7 +19,7 @@ class AboutPage extends Component {
             activeItem={1}
             length={2}
             showControls={true}
-            showIndicators={true}
+            showIndicators={false}
             className="imageCarousel"
             slide
           >
