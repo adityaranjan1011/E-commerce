@@ -42,6 +42,7 @@ p {
 }
 
 @media screen and (max-width: 1008px) and (min-width: 908px) {
+
     .aboutToText {
         font-size: 1.5em;
     }
@@ -49,6 +50,7 @@ p {
 
 @media screen and (max-width: 907px) and (min-width: 769px) {
     .AboutPage {
+        height: calc(100vh - 440px);
         grid-template-columns: none;
     }
     .imageCarousel {
@@ -60,5 +62,26 @@ p {
     }
     .aboutToText {
         font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:560px){
+    .AboutPage {
+        height: calc(100vh - 30px);
+        grid-template-columns: none;
+    }
+    .aboutImage{
+       text-align:  -webkit-center;
+    }
+    .imageCarousel {
+        width: 300px !important;
+        
+    }
+    .madhubaniImage {
+        height: 250px;
+        width:300px;
+    }
+    .aboutToText {
+        font-size: 1em;
     }
 }

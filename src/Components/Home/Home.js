@@ -9,7 +9,7 @@ import Twitter from "../../icons/twitter.svg";
 import ImageCarousel from "../ImageCarousel/ImageCarousel";
 import AboutPage from "../AboutPage/AboutPage";
 import ContactPage from "../ContactPage/ContactPage";
-// import Flag from "../../assets/inflag.jpg";
+import Flag from "../../assets/inflag.png";
 
 class Home extends Component {
   constructor(props) {
@@ -19,7 +19,7 @@ class Home extends Component {
       company_quote: "Spark of Your Closet",
       company_contact: "HELP & CONTACT",
       company_info: "ABOUT",
-      company_home: "HOME"
+      company_home: "HOME",
       // open: false,
     };
   }
@@ -29,24 +29,29 @@ class Home extends Component {
       <div className="Home" id="home">
         <header>
           <div className="logo">
-            <span className="text">
-            <Link
-                activeClass="active"
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-              {this.state.company_name}
-              </Link></span>
-            <p>{this.state.company_quote} </p>
-            {/* <img src={Flag} alt="" height="40px" width="60px"></img> */}
+            <div>
+              <span className="text">
+                <Link
+                  activeClass="active"
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  {this.state.company_name}
+                </Link>
+              </span>
+              <p>{this.state.company_quote} </p>
+            </div>
+            <div className="inflag">
+              <img src={Flag} alt="" height="40px" width="60px"></img>
+            </div>
           </div>
 
           <div className="contactDetails">
-            <span>
-            <Link
+             <span>
+              <Link
                 activeClass="active"
                 to="home"
                 spy={true}
@@ -56,7 +61,6 @@ class Home extends Component {
               >
                 {this.state.company_home}
               </Link>
-
             </span>
             <span>
               <Link
@@ -70,7 +74,9 @@ class Home extends Component {
                 {this.state.company_info}
               </Link>
             </span>
-            <span> <Link
+            <span>
+              {" "}
+              <Link
                 activeClass="active"
                 to="contact"
                 spy={true}
@@ -78,9 +84,9 @@ class Home extends Component {
                 offset={-70}
                 duration={500}
               >
-              {this.state.company_contact}
+                {this.state.company_contact}
               </Link>
-              </span>
+            </span> 
           </div>
         </header>
         <div className="countdown">
@@ -100,30 +106,30 @@ class Home extends Component {
         <AboutPage />
         <footer id="contact">
           <div className="contactInfo">
-           <ContactPage />
+            <ContactPage />
           </div>
-         <div className="follow-us">
-           <p className="follow-text">Follow us</p>
-          <span className="footer-text">
-            <a href="https://www.instagram.com/neowiseindia/?hl=en">
-              <img src={InstagramIcon} className="imageIcon" alt="" />
-             instagram
-            </a>
-          </span>
+          <div className="follow-us">
+            <p className="follow-text">Follow us</p>
+            <span className="footer-text">
+              <a href="https://www.instagram.com/neowiseindia/?hl=en">
+                <img src={InstagramIcon} className="imageIcon" alt="" />
+                instagram
+              </a>
+            </span>
 
-          <span className="footer-text">
-            <a href="https://www.facebook.com/neowiseindia/">
-              <img src={FacebookIcon} className="imageIcon" alt="" />
-            </a>
-            facebook
-          </span>
+            <span className="footer-text">
+              <a href="https://www.facebook.com/neowiseindia/">
+                <img src={FacebookIcon} className="imageIcon" alt="" />
+                facebook
+              </a>
+            </span>
 
-          <span className="footer-text">
-            <a href="https://twitter.com/neowiseindia">
-              <img src={Twitter} className="imageIcon" alt="" />
-              twitter
-            </a>
-          </span>
+            <span className="footer-text">
+              <a href="https://twitter.com/neowiseindia">
+                <img src={Twitter} className="imageIcon" alt="" />
+                twitter
+              </a>
+            </span>
           </div>
         </footer>
       </div>
