@@ -36,9 +36,6 @@
     .ProfilePage{
         grid-template-columns: repeat(2,1fr);
     }
-    .card{
-        left: 60px;
-    }
 }
 @media screen and (max-width: 907px) and (min-width: 769px) {
     .topic{
