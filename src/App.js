@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Home from './Components/Home/Home';
-// import AboutPage from './Components/AboutPage/AboutPage';
 
 // import { Canvas } from 'react-canvas-js';
 
@@ -31,8 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <Home/>    
-      {/* <AboutPage/>  */}
+      <Home/>         
     </div>
   );
 }

@@ -2,10 +2,12 @@
  * AboutPage css File
 */
 
-.AboutPage {
-    height: 100vh;
+.about-company {    
     background-color: #ffffff;
     padding: 20px;
+}
+.AboutPage {
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* propertys here */
@@ -42,9 +44,9 @@ p {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 908px) {
-.AboutPage{
-    height: auto;
-}
+    .AboutPage {
+        height: auto;
+    }
     .aboutToText {
         font-size: 1.5em;
     }
@@ -58,10 +60,10 @@ p {
     /* .imageCarousel {
         left:75px;
         } */
-        .aboutImage{
-            text-align: -webkit-center;
-        }
-    .madhubaniImage{
+    .aboutImage {
+        text-align: -webkit-center;
+    }
+    .madhubaniImage {
         height: 300px;
         width: 400px;
     }
@@ -70,45 +72,43 @@ p {
     }
 }
 
-@media screen and (max-width:768px) and (min-width:560px){
+@media screen and (max-width: 768px) and (min-width: 560px) {
     .AboutPage {
         height: auto;
         grid-template-columns: none;
     }
-    .aboutImage{
-       text-align:  -webkit-center;
+    .aboutImage {
+        text-align: -webkit-center;
     }
     .imageCarousel {
         width: 300px !important;
-        
     }
     .madhubaniImage {
         height: 250px;
-        width:300px;
+        width: 300px;
     }
     .aboutToText {
         font-size: 1em;
     }
 }
 
-@media screen and (max-width:559px) and (min-width:350px)
-{
-    .AboutPage{
+@media screen and (max-width: 559px) and (min-width: 350px) {
+    .AboutPage {
         height: auto;
-        grid-template-columns:none;
+        grid-template-columns: none;
     }
-    .aboutToText{
+    .aboutToText {
         font-size: 1em;
     }
-    .aboutImage{
+    .aboutImage {
         margin: 0px auto;
     }
-    .imageCarousel{
+    .imageCarousel {
         width: 300px !important;
         left: auto;
     }
     .madhubaniImage {
         height: 250px;
-        width:300px;
+        width: 300px;
     }
 }

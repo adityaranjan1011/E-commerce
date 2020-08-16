@@ -1,0 +1,68 @@
+/*
+ * ProfilePage css File
+*/
+.topic{
+    color: #000000;
+}
+.ProfilePage {
+    padding: 20px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.card{
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    /* left: 10px; */
+}
+.card-img-top{
+    border-radius: 60px !important;
+    height: 120px;
+    width: 140px !important;
+    margin: 0px auto;
+
+}
+.card-text{
+    font-size: 1em !important;
+    /* color: #000000 !important; */
+    font-weight: 500 !important;
+}
+@media screen and (max-width: 1024px) and (min-width: 908px){
+    .topic{
+        margin-top: 10px;
+        font-size: 2em;
+    }
+    .ProfilePage{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .card{
+        left: 60px;
+    }
+}
+@media screen and (max-width: 907px) and (min-width: 769px) {
+    .topic{
+        font-size: 1.5em;
+    }
+    .ProfilePage{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 560px){
+    .topic{
+        font-size: 1.2em;
+    }
+    .ProfilePage{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 559px) and (min-width: 350px){
+    .topic{
+        font-size: 1em;
+    }
+    .ProfilePage{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

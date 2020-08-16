@@ -8,11 +8,13 @@ import {
 } from "mdbreact";
 import MadhubaniImage from "../../assets/madhu1.jpeg";
 import MadhubaniImage2 from "../../assets/madhu2.jpg";
+import ProfilePage from "../ProfilePage/ProfilePage";
 
 class AboutPage extends Component { 
 
   render() {
     return (
+      <div className="about-company">
       <div className="AboutPage" id="about">
         <div className="aboutImage">
           <MDBCarousel
@@ -58,6 +60,8 @@ class AboutPage extends Component {
           </p>
         </div>
       </div>
+       <ProfilePage />
+       </div>
     );
   }
 }
