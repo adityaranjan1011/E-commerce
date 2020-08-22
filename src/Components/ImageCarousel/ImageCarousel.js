@@ -23,7 +23,7 @@ const ImageCarousel = () => {
                 className="d-block w-100 neoImage"
                 src={NeoBrand}
                 alt="First slide"
-                // height="400px" width="960px" 
+                height="400px" width="960px" 
                 
               />
             </MDBView>
@@ -34,7 +34,7 @@ const ImageCarousel = () => {
                 className="d-block w-100 neoImage"
                 src={NeoImage}
                 alt="Second slide"  
-                // height="400px" width="960px"
+                height="400px" width="960px"
               />
             </MDBView>
           </MDBCarouselItem>
