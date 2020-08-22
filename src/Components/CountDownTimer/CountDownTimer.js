@@ -5,7 +5,7 @@ export default function CountDownTimer() {
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear();
 
-    const diff = +new Date(`${year}-11-20`) - +new Date();
+    const diff = +new Date(`${year}-11-22`) - +new Date();
 
     let timeLeft = {};
 

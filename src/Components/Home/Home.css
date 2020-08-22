@@ -50,6 +50,7 @@ p {
 
 .countdown {
     padding: 40px;
+    margin-top: 15px;
 }
 footer {
     background-color: #ff5722;
@@ -106,6 +107,9 @@ a {
 
     .logo {
         justify-content: space-between;
+    }
+    .countdown{
+        padding:20px;
     }
   footer{
       height: auto;

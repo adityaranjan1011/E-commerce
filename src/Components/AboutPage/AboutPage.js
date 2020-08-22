@@ -8,7 +8,7 @@ import {
 } from "mdbreact";
 import MadhubaniImage from "../../assets/madhu1.jpeg";
 import MadhubaniImage2 from "../../assets/madhu2.jpg";
-import ProfilePage from "../ProfilePage/ProfilePage";
+// import ProfilePage from "../ProfilePage/ProfilePage";
 
 class AboutPage extends Component { 
 
@@ -60,7 +60,7 @@ class AboutPage extends Component {
           </p>
         </div>
       </div>
-       <ProfilePage />
+       {/* <ProfilePage /> */}
        </div>
     );
   }

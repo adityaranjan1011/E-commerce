@@ -6,7 +6,7 @@
     padding: 20px;
 }
 h1{
-    font-size: 3em;
+    font-size: 3em !important;
     font-family: initial;
     font-weight: 500;
 }
@@ -36,7 +36,7 @@ a{
       padding: 10px;
   }
   h1{
-      font-size: 2em;
+      font-size: 24px !important;
   }
   .days-timer{
       font-size: 0.8em;

@@ -3,7 +3,7 @@ import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBContainer }
 "mdbreact";
 import NeoBrand from "../../assets/neo1.jpeg";
 // import IndiaImage from "../../assets/indianflag.jpg";
-import NeoImage from "../../assets/neo2.jpeg";
+import NeoImage from "../../assets/neo.jpg";
 
 const ImageCarousel = () => {
   return (
@@ -12,30 +12,19 @@ const ImageCarousel = () => {
         activeItem={1}
         length={2}
         showControls={true}
-        showIndicators={true}
+        showIndicators={false}
         className="z-depth-1"
         slide
       >
         <MDBCarouselInner>
-          {/* <MDBCarouselItem itemId="1">
-            <MDBView>
-              <img
-                className="d-block w-100 neoImage"
-                src={IndiaImage}
-                alt="First slide"
-                height="400px" width="960px" 
-                // min-height="250px" min-width="300px"
-              />
-            </MDBView>
-          </MDBCarouselItem> */}
           <MDBCarouselItem itemId="1">
             <MDBView>
               <img
                 className="d-block w-100 neoImage"
-                src={NeoImage}
-                alt="First slide"  
-                height="400px" width="960px"
-                //  min-height="250px" min-width="300px"
+                src={NeoBrand}
+                alt="First slide"
+                // height="400px" width="960px" 
+                
               />
             </MDBView>
           </MDBCarouselItem>
@@ -43,13 +32,23 @@ const ImageCarousel = () => {
             <MDBView>
               <img
                 className="d-block w-100 neoImage"
+                src={NeoImage}
+                alt="Second slide"  
+                // height="400px" width="960px"
+              />
+            </MDBView>
+          </MDBCarouselItem>
+          {/* <MDBCarouselItem itemId="3">
+            <MDBView>
+              <img
+                className="d-block w-100 neoImage"
                 src={NeoBrand}
-                alt="Second slide"
+                alt="Third slide"
                 height=" 400px" width="960px" 
                 // min-height="250px" min-width="300px"
               />
             </MDBView>
-          </MDBCarouselItem>
+          </MDBCarouselItem> */}
         </MDBCarouselInner>
       </MDBCarousel>
     </MDBContainer>
